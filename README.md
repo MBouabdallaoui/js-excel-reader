@@ -20,7 +20,9 @@ A simple interface methods to read xls, xlsx and csv files, compatible with old 
         <title>Title</title>
     </head>
     <body>
-    <script src="es5-shim.min.js"></script>
+    <!--[if lt IE 8]>
+        <script src="es5-shim.min.js"></script>
+    <![endif]-->
     <script src="moxie.min.js"></script>
     <script src="o.js"></script>
     <script src="jszip.min.js"></script>
