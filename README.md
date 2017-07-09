@@ -20,10 +20,11 @@ A simple interface methods to read xls, xlsx ans csv files, compatible with old 
         <title>Title</title>
     </head>
     <body>
-    <script src="es5-shim.js"></script>
-    <script src="moxie.js"></script>
-    <script src="jszip.js"></script>
-    <script src="xlsx.js"></script>
+    <script src="es5-shim.min.js"></script>
+    <script src="moxie.min.js"></script>
+    <script src="o.js"></script>
+    <script src="jszip.min.js"></script>
+    <script src="xlsx.min.js"></script>
     <script src="simple-sheet.js"></script>
     <script>mOxie.Env.swf_url = "moxieSwf/Moxie.min.swf";</script>
     
