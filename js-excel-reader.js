@@ -1,12 +1,5 @@
 /*!
- * axe-sheet-upload.js
- * Capacite javascript de traitement du chargement des fichiers de type xls,xlsx et csv.
- * Retroune le contenue en format json dans un composant html
- *
- * Prerequis : dans l'ordre
- * es5-shim.js, moxie.js, jszip.js, xlsx.js
- *
- * @author : A452790 - BOUABDALLAOUI Mohammed
+ * @author : BOUABDALLAOUI Mohammed
  * Juin 2017
  */
 
@@ -17,30 +10,10 @@ var SM_SHEET = {};
     var csv_regex = /^\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*(?:,\s*(?:'[^'\\]*(?:\\[\S\s][^'\\]*)*'|"[^"\\]*(?:\\[\S\s][^"\\]*)*"|[^,'"\s\\]*(?:\s+[^,'"\s\\]+)*)\s*)*$/;
 
     /**
-     * simpleSheetReadAll : Traitement du chargement des fichiers xlsx, xls et csv
-     * Resultat de retour dans le composant html en parametre
-     * @param {File} file : Variable file
-     * @param {String} widget : widget du composant html qui va contenir le resultat
-     *
-     * Exemple Utilisation :
-     <script src="es5-shim.js"></script>
-     <script src="moxie.js"></script>
-     <script src="jszip.js"></script>
-     <script src="xlsx.js"></script>
-     <script src="axe-moxie-sheet.js"></script>
-     <script>mOxie.Env.swf_url = "moxieSwf/Moxie.min.swf";</script>
-     
-     <a id="file-picker" href="javascript:;">Charger un fichier ... </a>
-     <span id="result"></span>
-
-     <script>
-         var fileInput = new mOxie.FileInput({browse_button: 'file-picker', accept: [{title: "Excel", extensions: "csv,xls,xlsx"}]});
-         fileInput.onchange = function (e) {
-            var file = e.target.files[0];
-            SM_SHEET.simpleSheetReadAll(file, hidden_field_widget);//Cette methode va charger le contenue du fichier excel dans la valeur de la widget caché
-         };
-         fileInput.init();
-     </script>
+     * 
+     * @param {*} file 
+     * @param {*} widget 
+     * @param {*} options 
      */
     var toJsonContent = function (file, widget, options) {
 
@@ -73,6 +46,12 @@ var SM_SHEET = {};
         });
     };
 
+    /**
+     * 
+     * @param {*} file 
+     * @param {*} widget 
+     * @param {*} options 
+     */
     var toHtmlContent = function (file, widget, options) {
 
         //console.log(file.name, file.type, file.size);

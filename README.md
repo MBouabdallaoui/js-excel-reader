@@ -21,13 +21,13 @@ A simple interface methods to read xls, xlsx and csv files, compatible with old 
     </head>
     <body>
     <!--[if lt IE 8]>
-        <script src="es5-shim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/es5-shim/4.5.7/es5-shim.min.js"></script>
     <![endif]-->
-    <script src="moxie.min.js"></script>
-    <script src="o.js"></script>
-    <script src="jszip.min.js"></script>
-    <script src="xlsx.min.js"></script>
-    <script src="simple-sheet.js"></script>
+    <script src="https://raw.githubusercontent.com/moxiecode/moxie/master/bin/js/moxie.min.js"></script>
+    <script src="https://raw.githubusercontent.com/Stuk/jszip/master/dist/jszip.min.js"></script>
+    <script src="https://raw.githubusercontent.com/SheetJS/js-xlsx/master/dist/xlsx.min.js"></script>
+    <script src="https://raw.githubusercontent.com/moxiecode/moxie/master/src/javascript/o.js"></script>
+    <script src="js-excel-reader.js"></script>
     <script>mOxie.Env.swf_url = "moxieSwf/Moxie.min.swf";</script>
     
     <a id="file-picker" href="javascript:;">Charger un fichier ... </a>
