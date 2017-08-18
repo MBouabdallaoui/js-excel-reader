@@ -1,4 +1,4 @@
-# simple-sheet
+# js-excel-reader
 A simple interface methods to read xls, xlsx and csv files, compatible with old navigators like "Interet Explorer 8" and moderns too.
 
 ## Prerequisites
